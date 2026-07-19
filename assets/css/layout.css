@@ -1,0 +1,56 @@
+/* File: assets/css/layout.css */
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-card {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.company-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin: 5px 0 0 0;
+}
+
+.info-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.divider {
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}

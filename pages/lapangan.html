@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absen Lapangan - Woolspace</title>
+    
+    <!-- Memanggil CSS dengan ../ karena posisi file ada di dalam folder pages/ -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-card">
+            <header>
+                <h2 class="app-title" style="font-size: 24px;">📍 Form Absen Lapangan</h2>
+                <p class="company-name" style="margin-top: 5px;">WOOLSPACE HRIS</p>
+            </header>
+
+            <form id="lapanganForm">
+                <div class="form-group">
+                    <label>Nama Karyawan</label>
+                    <select id="nama" required>
+                        <option value="">-- Memuat Data Karyawan --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Jabatan</label>
+                    <input type="text" id="jabatan" readonly placeholder="Otomatis terisi">
+                </div>
+
+                <div class="form-group">
+                    <label>Lokasi Tujuan</label>
+                    <input type="text" id="lokasi" required placeholder="Contoh: Kantor Klien PT ABC">
+                </div>
+
+                <div class="form-group">
+                    <label>URL / Link GMaps</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" id="url" required placeholder="Paste link di sini" style="flex: 1;">
+                        <a href="https://www.google.co.id/maps" target="_blank" class="btn" style="background-color: #2a9ef4; color: white; width: auto; padding: 0 15px; white-space: nowrap; text-decoration: none;">📍 Buka Maps</a>
+                    </div>
+                </div>
+
+                <div class="button-group" style="margin-top: 25px;">
+                    <button type="submit" class="btn btn-lapangan" id="btnSubmit">Kirim Absen Lapangan</button>
+                </div>
+            </form>
+            
+            <a href="../index.html" class="btn btn-nav" style="margin-top: 15px; background-color: #f1f5f9; color: #334155;">⬅ Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+
+    <!-- Tambahkan library SweetAlert2 di sini -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script JS -->
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/lapangan.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajukan Lembur - Woolspace</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-card">
+            <header>
+                <h2 class="app-title" style="font-size: 24px; color: var(--purple-lembur);">⏱️ Form Lembur</h2>
+                <p class="company-name" style="margin-top: 5px;">WOOLSPACE HRIS</p>
+            </header>
+
+            <form id="lemburForm">
+                <div class="form-group">
+                    <label>Nama Karyawan</label>
+                    <select id="nama" required>
+                        <option value="">-- Memuat Data Karyawan --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Jabatan</label>
+                    <input type="text" id="jabatan" readonly placeholder="Otomatis terisi">
+                </div>
+
+                <div class="form-group">
+                    <label>Tanggal Lembur</label>
+                    <input type="date" id="tglLembur" required>
+                </div>
+
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>Jam Mulai</label>
+                        <input type="time" id="jamMulai" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jam Selesai</label>
+                        <input type="time" id="jamSelesai" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Total Jam Lembur</label>
+                    <input type="text" id="totalJam" required placeholder="Otomatis terisi" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Pekerjaan yang dilakukan</label>
+                    <input type="text" id="alasan" required placeholder="Contoh: Revisi desain klien">
+                </div>
+
+                <div class="button-group" style="margin-top: 25px;">
+                    <button type="submit" class="btn btn-lembur" id="btnSubmit">Ajukan Lembur</button>
+                </div>
+            </form>
+            
+            <a href="../index.html" class="btn btn-nav" style="margin-top: 15px; background-color: #f1f5f9; color: #334155;">⬅ Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+
+    <!-- Tambahkan library SweetAlert2 di sini -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/lembur.js"></script>
+</body>
+</html>

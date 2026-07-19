@@ -1,0 +1,30 @@
+/* File: assets/css/responsive.css */
+
+/* Pengaturan untuk layar HP standar */
+@media (max-width: 480px) {
+    .current-time { 
+        font-size: 40px; 
+    }
+    
+    .main-card { 
+        padding: 20px; 
+        border-radius: 15px; 
+    }
+    
+    .btn { 
+        font-size: 14px; 
+        padding: 12px 5px; 
+    }
+}
+
+/* Pengaturan untuk layar HP sangat kecil (seperti iPhone SE) */
+@media (max-width: 360px) {
+    .button-group.row-2 { 
+        /* Jika layar terlalu sempit, susun tombol ke bawah */
+        grid-template-columns: 1fr; 
+    }
+    
+    .current-time {
+        font-size: 32px;
+    }
+}

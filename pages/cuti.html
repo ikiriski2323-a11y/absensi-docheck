@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajukan Cuti - Woolspace</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-card">
+            <header>
+                <h2 class="app-title" style="font-size: 24px; color: var(--info-blue);">🌴 Form Cuti</h2>
+                <p class="company-name" style="margin-top: 5px;">WOOLSPACE HRIS</p>
+            </header>
+
+            <form id="cutiForm">
+                <div class="form-group">
+                    <label>Nama Karyawan</label>
+                    <select id="nama" required>
+                        <option value="">-- Memuat Data Karyawan --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Jabatan</label>
+                    <input type="text" id="jabatan" readonly placeholder="Otomatis terisi">
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Cuti</label>
+                    <select id="jenisCuti" required>
+                        <option value="">-- Pilih Jenis Cuti --</option>
+                        <option value="Cuti Tahunan">Cuti Tahunan</option>
+                        <option value="Cuti Menikah">Cuti Menikah</option>
+                        <option value="Cuti Melahirkan">Cuti Melahirkan</option>
+                    </select>
+                </div>
+
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>Tanggal Mulai</label>
+                        <input type="date" id="tglMulai" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Selesai</label>
+                        <input type="date" id="tglSelesai" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Hari</label>
+                    <input type="number" id="jmlHari" required placeholder="Otomatis terisi" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Keterangan / Alasan</label>
+                    <input type="text" id="alasan" required placeholder="Tulis alasan secara singkat">
+                </div>
+
+                <div class="button-group" style="margin-top: 25px;">
+                    <button type="submit" class="btn btn-cuti" style="color: white;" id="btnSubmit">Ajukan Cuti</button>
+                </div>
+            </form>
+            
+            <a href="../index.html" class="btn btn-nav" style="margin-top: 15px; background-color: #f1f5f9; color: #334155;">⬅ Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+
+    <!-- Tambahkan library SweetAlert2 di sini -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/cuti.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* File: assets/css/style.css */
+
+/* Teks bantu untuk navigasi menu */
+.nav-title { 
+    text-align: center; 
+    font-size: 14px; 
+    color: var(--text-muted); 
+    margin-bottom: 15px; 
+    font-weight: 500; 
+}
+
+/* Mengubah warna teks placeholder pada input agar lebih lembut */
+::placeholder {
+    color: #a0aec0;
+}
