@@ -40,10 +40,10 @@ document.getElementById('izinForm').addEventListener('submit', async function(e)
         nama: document.getElementById('nama').value,
         jabatan: document.getElementById('jabatan').value,
         status: 'Izin',
-        alasan: alasanGabungan, // Diambil dari gabungan di atas
-        jamMasuk: '-', // Diberi strip karena tidak absen masuk
-        lat: '0', 
-        lng: '0'
+        alasan: alasanGabungan,
+        jamMasuk: '-', 
+        lat: '-', 
+        lng: '-'
     };
 
     const sukses = await kirimDataAbsen(payload);
